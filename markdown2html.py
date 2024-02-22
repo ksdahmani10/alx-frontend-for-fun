@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 if md5:
                     line = line.replace(md5[0], hashlib.md5(
                         md5_inside[0].encode()).hexdigest())
-<<<<<<< HEAD
+
 
                 # remove the letter C
                 remove_letter_c = re.findall(r'\(\(.+?\)\)', line)
@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     html.write('</ul>\n')
                     unordered_start = False
 
-=======
+
                 # remove the letter C
                 remove_letter_c = re.findall(r'\(\(.+?\)\)', line)
                 remove_c_more = re.findall(r'\(\((.+?)\)\)', line)
@@ -98,7 +98,7 @@ if __name__ == '__main__':
                     html.write('</ul>\n')
                     unordered_start = False
 
->>>>>>> 4bcce93f4b9e8a44d2a06a61d7108938d7246112
+
                 if ordered_num:
                     if not ordered_start:
                         html.write('<ol>\n')
