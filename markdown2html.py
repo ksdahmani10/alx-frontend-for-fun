@@ -35,7 +35,6 @@ if __name__ == '__main__':
                 if md5:
                     line = line.replace(md5[0], hashlib.md5(
                         md5_inside[0].encode()).hexdigest())
-
                 # remove the letter C
                 remove_letter_c = re.findall(r'\(\(.+?\)\)', line)
                 remove_c_more = re.findall(r'\(\((.+?)\)\)', line)
